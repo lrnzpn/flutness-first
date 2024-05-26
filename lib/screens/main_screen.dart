@@ -1,3 +1,4 @@
+import 'package:flutness_first/widgets/dashboard_widget.dart';
 import 'package:flutness_first/widgets/side_menu_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class MainScreen extends StatelessWidget {
               child: SideMenuWidget(),
             ),
           ),
-          Expanded(flex: 7, child: Container(color: Colors.blue)),
+          const Expanded(flex: 7, child: DashboardWidget()),
           Expanded(flex: 3, child: Container(color: Colors.green))
         ],
       ),
